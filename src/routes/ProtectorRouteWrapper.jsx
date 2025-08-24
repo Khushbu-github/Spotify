@@ -485,6 +485,25 @@
 // EnhancedProctoredRouteWrapper.jsx
 // ProctoredRouteWrapper.jsx
 // ProctoredRouteWrapper.jsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -1145,8 +1164,8 @@ const ProctoredRouteWrapper = ({ children }) => {
       window.removeEventListener('beforeunload', handleBeforeUnload);
     };
   }, [isMonitoring]);
-  const navigate=useNavigate()
-useEffect(()=>{if(violations>10){navigate('/')}},[violations])
+
+
   // Error state
   if (error) {
     return (
